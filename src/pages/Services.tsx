@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -6,7 +5,7 @@ import {
   Car, 
   Shield, 
   Sparkles, 
-  Vacuum, 
+  Wind, 
   Droplets, 
   Zap,
   CheckCircle,
@@ -93,7 +92,7 @@ const Services = () => {
             <div>
               <div className="flex items-center mb-6">
                 <div className="automotive-gradient p-3 rounded-lg mr-4">
-                  <Vacuum className="h-8 w-8 text-white" />
+                  <Wind className="h-8 w-8 text-white" />
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900">Interior Detailing</h2>
               </div>
