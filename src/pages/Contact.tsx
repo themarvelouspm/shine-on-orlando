@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -92,7 +91,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="automotive-gradient text-white py-16">
+      <section className="contact-hero-bg text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
             Get In Touch
@@ -199,7 +198,7 @@ const Contact = () => {
                       />
                     </div>
                     
-                    <Button type="submit" className="w-full automotive-gradient">
+                    <Button type="submit" className="w-full btn-primary">
                       <Send className="h-4 w-4 mr-2" />
                       Send Message
                     </Button>
@@ -303,7 +302,7 @@ const Contact = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-white text-blue-900 hover:bg-gray-100 px-8 py-3"
+              className="btn-primary-inverse px-8 py-3"
             >
               Book Online Now
             </Button>
