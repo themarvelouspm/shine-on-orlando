@@ -186,29 +186,31 @@
   background-attachment: fixed;
 }
 
-/* Fix button text visibility with better contrast */
+/* Custom button styles with consistent border radius */
 .btn-primary {
-  background: white;
-  color: hsl(var(--automotive-blue)) !important;
-  border: 2px solid hsl(var(--automotive-blue));
+  background: linear-gradient(135deg, hsl(var(--automotive-blue)) 0%, hsl(var(--automotive-dark)) 100%);
+  color: white !important;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
   transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, hsl(var(--automotive-blue)) 0%, hsl(var(--automotive-dark)) 100%);
-  color: white !important;
-  border-color: transparent;
+  background: white;
+  color: hsl(var(--automotive-blue)) !important;
+  border-color: hsl(var(--automotive-blue));
 }
 
 .btn-primary-inverse {
-  background: linear-gradient(135deg, hsl(var(--automotive-blue)) 0%, hsl(var(--automotive-dark)) 100%);
-  color: white !important;
-  border: 2px solid transparent;
+  background: white;
+  color: hsl(var(--automotive-blue)) !important;
+  border: 2px solid hsl(var(--automotive-blue));
+  border-radius: 0.5rem;
   transition: all 0.3s ease;
 }
 
 .btn-primary-inverse:hover {
-  background: white;
-  color: hsl(var(--automotive-blue)) !important;
-  border-color: hsl(var(--automotive-blue));
+  background: linear-gradient(135deg, hsl(var(--automotive-blue)) 0%, hsl(var(--automotive-dark)) 100%);
+  color: white !important;
+  border-color: transparent;
 }
