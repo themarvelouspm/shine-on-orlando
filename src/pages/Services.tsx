@@ -73,12 +73,12 @@ const Services = () => {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section className="automotive-gradient text-white py-16">
+      <section className="services-hero-bg text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 font-montserrat">
             Professional Auto Detailing Services
           </h1>
-          <p className="text-xl text-gray-100 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-100 max-w-3xl mx-auto font-roboto">
             From basic washes to complete paint correction, we offer comprehensive 
             auto detailing services to keep your vehicle looking its absolute best.
           </p>
@@ -94,39 +94,39 @@ const Services = () => {
                 <div className="automotive-gradient p-3 rounded-lg mr-4">
                   <Wind className="h-8 w-8 text-white" />
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900">Interior Detailing</h2>
+                <h2 className="text-3xl font-bold text-gray-900 font-montserrat">Interior Detailing</h2>
               </div>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-gray-600 mb-6 font-roboto">
                 From vacuuming to odor elimination—we make the inside of your car feel brand new.
               </p>
               <div className="space-y-3 mb-8">
                 {interiorServices.map((service, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700">{service}</span>
+                    <span className="text-gray-700 font-roboto">{service}</span>
                   </div>
                 ))}
               </div>
               <div className="flex items-center space-x-4">
-                <Badge variant="secondary" className="px-4 py-2 text-lg">
+                <Badge variant="secondary" className="px-4 py-2 text-lg font-roboto">
                   <DollarSign className="h-4 w-4 mr-1" />
                   Starting at $89
                 </Badge>
-                <Badge variant="outline" className="px-4 py-2">
+                <Badge variant="outline" className="px-4 py-2 font-roboto">
                   <Clock className="h-4 w-4 mr-1" />
                   1-2 hours
                 </Badge>
               </div>
             </div>
             <div className="automotive-gradient rounded-lg p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Premium Interior Package</h3>
-              <p className="text-gray-100 mb-4">
+              <h3 className="text-2xl font-bold mb-4 font-montserrat">Premium Interior Package</h3>
+              <p className="text-gray-100 mb-4 font-roboto">
                 Complete interior transformation including steam cleaning, 
                 leather conditioning, and protective treatments.
               </p>
               <Button 
                 variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-blue-900"
+                className="border-white text-white hover:bg-white hover:text-blue-900 font-roboto"
               >
                 Request Quote
               </Button>
@@ -140,12 +140,12 @@ const Services = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="bg-white rounded-lg p-8 shadow-lg lg:order-2">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Premium Exterior Package</h3>
-              <p className="text-gray-600 mb-4">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900 font-montserrat">Premium Exterior Package</h3>
+              <p className="text-gray-600 mb-4 font-roboto">
                 Complete exterior restoration including paint decontamination, 
                 polishing, and premium wax protection.
               </p>
-              <Button className="automotive-gradient">
+              <Button className="btn-primary font-roboto">
                 Request Quote
               </Button>
             </div>
@@ -154,25 +154,25 @@ const Services = () => {
                 <div className="automotive-gradient p-3 rounded-lg mr-4">
                   <Car className="h-8 w-8 text-white" />
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900">Exterior Detailing</h2>
+                <h2 className="text-3xl font-bold text-gray-900 font-montserrat">Exterior Detailing</h2>
               </div>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-gray-600 mb-6 font-roboto">
                 Hand wash, tire shine, clay bar, and wax for a spotless exterior.
               </p>
               <div className="space-y-3 mb-8">
                 {exteriorServices.map((service, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700">{service}</span>
+                    <span className="text-gray-700 font-roboto">{service}</span>
                   </div>
                 ))}
               </div>
               <div className="flex items-center space-x-4">
-                <Badge variant="secondary" className="px-4 py-2 text-lg">
+                <Badge variant="secondary" className="px-4 py-2 text-lg font-roboto">
                   <DollarSign className="h-4 w-4 mr-1" />
                   Starting at $129
                 </Badge>
-                <Badge variant="outline" className="px-4 py-2">
+                <Badge variant="outline" className="px-4 py-2 font-roboto">
                   <Clock className="h-4 w-4 mr-1" />
                   2-3 hours
                 </Badge>
@@ -190,9 +190,9 @@ const Services = () => {
               <div className="automotive-gradient p-3 rounded-lg mr-4">
                 <Shield className="h-8 w-8 text-white" />
               </div>
-              <h2 className="text-3xl font-bold text-gray-900">Ceramic Coating Protection</h2>
+              <h2 className="text-3xl font-bold text-gray-900 font-montserrat">Ceramic Coating Protection</h2>
             </div>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto font-roboto">
               Long-lasting protection that keeps your vehicle looking showroom fresh. 
               Our ceramic coatings provide unmatched durability and shine.
             </p>
@@ -202,10 +202,10 @@ const Services = () => {
             {ceramicOptions.map((option, index) => (
               <Card key={index} className={`hover-scale transition-all duration-300 ${index === 1 ? 'border-blue-500 border-2 scale-105' : ''}`}>
                 <CardHeader className="text-center">
-                  <CardTitle className="text-2xl font-bold text-gray-900">
+                  <CardTitle className="text-2xl font-bold text-gray-900 font-montserrat">
                     {option.duration} Protection
                   </CardTitle>
-                  <p className="text-3xl font-bold automotive-gradient bg-clip-text text-transparent">
+                  <p className="text-3xl font-bold automotive-gradient bg-clip-text text-transparent font-montserrat">
                     {option.price}
                   </p>
                 </CardHeader>
@@ -214,11 +214,11 @@ const Services = () => {
                     {option.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center space-x-2">
                         <CheckCircle className="h-4 w-4 text-green-600 flex-shrink-0" />
-                        <span className="text-gray-700">{feature}</span>
+                        <span className="text-gray-700 font-roboto">{feature}</span>
                       </li>
                     ))}
                   </ul>
-                  <Button className="w-full mt-6 automotive-gradient">
+                  <Button className="w-full mt-6 btn-primary font-roboto">
                     Choose This Option
                   </Button>
                 </CardContent>
@@ -227,23 +227,23 @@ const Services = () => {
           </div>
 
           <div className="bg-blue-50 rounded-lg p-8 mt-12">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Benefits of Ceramic Coating:</h3>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4 font-montserrat">Benefits of Ceramic Coating:</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="flex items-center space-x-3">
                 <Shield className="h-5 w-5 text-blue-600" />
-                <span>Protection from UV rays and oxidation</span>
+                <span className="font-roboto">Protection from UV rays and oxidation</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Droplets className="h-5 w-5 text-blue-600" />
-                <span>Hydrophobic properties for easy cleaning</span>
+                <span className="font-roboto">Hydrophobic properties for easy cleaning</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Sparkles className="h-5 w-5 text-blue-600" />
-                <span>Enhanced gloss and depth of color</span>
+                <span className="font-roboto">Enhanced gloss and depth of color</span>
               </div>
               <div className="flex items-center space-x-3">
                 <CheckCircle className="h-5 w-5 text-blue-600" />
-                <span>Reduced maintenance and washing time</span>
+                <span className="font-roboto">Reduced maintenance and washing time</span>
               </div>
             </div>
           </div>
@@ -254,8 +254,8 @@ const Services = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Add-On Services</h2>
-            <p className="text-lg text-gray-600">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4 font-montserrat">Add-On Services</h2>
+            <p className="text-lg text-gray-600 font-roboto">
               Enhance your detailing package with these specialized services
             </p>
           </div>
@@ -265,11 +265,11 @@ const Services = () => {
               <Card key={index} className="hover-scale transition-all duration-300">
                 <CardContent className="p-6">
                   <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-xl font-semibold text-gray-900">{addon.name}</h3>
-                    <Badge className="automotive-gradient">{addon.price}</Badge>
+                    <h3 className="text-xl font-semibold text-gray-900 font-montserrat">{addon.name}</h3>
+                    <Badge className="btn-primary font-roboto">{addon.price}</Badge>
                   </div>
-                  <p className="text-gray-600 mb-4">{addon.description}</p>
-                  <Button variant="outline" className="w-full">
+                  <p className="text-gray-600 mb-4 font-roboto">{addon.description}</p>
+                  <Button variant="outline" className="w-full font-roboto">
                     Add to Service
                   </Button>
                 </CardContent>
@@ -282,23 +282,23 @@ const Services = () => {
       {/* CTA Section */}
       <section className="automotive-gradient text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 font-montserrat">
             Ready to Transform Your Vehicle?
           </h2>
-          <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-100 mb-8 max-w-2xl mx-auto font-roboto">
             Contact us today for a personalized quote tailored to your vehicle's needs
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
-              className="bg-white text-blue-900 hover:bg-gray-100 px-8 py-3"
+              className="btn-primary-inverse px-8 py-3 font-roboto"
             >
               Get Free Quote
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white text-white hover:bg-white hover:text-blue-900 px-8 py-3"
+              className="border-white text-white hover:bg-white hover:text-blue-900 px-8 py-3 font-roboto"
             >
               <a href="tel:+14072196915">Call (407) 219-6915</a>
             </Button>

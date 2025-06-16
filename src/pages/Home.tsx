@@ -84,22 +84,22 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative automotive-gradient text-white py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <section className="relative hero-bg text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-black/30"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight font-montserrat">
               Orlando's Premier
               <span className="block gold-accent">Mobile Auto Detailing</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-100">
+            <p className="text-xl md:text-2xl mb-8 text-gray-100 font-roboto">
               We bring the shine to you—on time, every time.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-white text-blue-900 hover:bg-gray-100 text-lg px-8 py-3 shine-effect"
+                className="btn-primary-inverse text-lg px-8 py-3 shine-effect font-roboto"
               >
                 <Link to="/book">Book Now</Link>
               </Button>
@@ -107,7 +107,7 @@ const Home = () => {
                 asChild 
                 variant="outline" 
                 size="lg" 
-                className="border-white text-white hover:bg-white hover:text-blue-900 text-lg px-8 py-3"
+                className="border-white text-white hover:bg-white hover:text-blue-900 text-lg px-8 py-3 font-roboto"
               >
                 <Link to="/services">View Services</Link>
               </Button>
@@ -121,10 +121,10 @@ const Home = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-montserrat">
               Our Premium Services
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto font-roboto">
               Professional auto detailing services that keep your vehicle looking its absolute best
             </p>
           </div>
@@ -136,9 +136,9 @@ const Home = () => {
                   <div className="automotive-gradient w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-white">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-semibold mb-4 text-gray-900">{service.title}</h3>
-                  <p className="text-gray-600 mb-6">{service.description}</p>
-                  <Button asChild variant="outline" className="group">
+                  <h3 className="text-xl font-semibold mb-4 text-gray-900 font-montserrat">{service.title}</h3>
+                  <p className="text-gray-600 mb-6 font-roboto">{service.description}</p>
+                  <Button asChild variant="outline" className="group font-roboto">
                     <Link to={service.link}>
                       Learn More
                       <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
@@ -155,10 +155,10 @@ const Home = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-montserrat">
               Why Choose EV's Detail & Buff
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-gray-600 font-roboto">
               Professional service you can trust, with results that speak for themselves
             </p>
           </div>
@@ -169,8 +169,8 @@ const Home = () => {
                 <div className="automotive-gradient w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-white group-hover:scale-110 transition-transform">
                   {item.icon}
                 </div>
-                <h3 className="text-lg font-semibold mb-2 text-gray-900">{item.title}</h3>
-                <p className="text-gray-600 text-sm">{item.description}</p>
+                <h3 className="text-lg font-semibold mb-2 text-gray-900 font-montserrat">{item.title}</h3>
+                <p className="text-gray-600 text-sm font-roboto">{item.description}</p>
               </div>
             ))}
           </div>
@@ -181,14 +181,14 @@ const Home = () => {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 font-montserrat">
               What Our Customers Say
             </h2>
             <div className="flex justify-center items-center space-x-1 mb-4">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="h-6 w-6 fill-yellow-400 text-yellow-400" />
               ))}
-              <span className="ml-2 text-lg font-semibold text-gray-700">5.0 Rating</span>
+              <span className="ml-2 text-lg font-semibold text-gray-700 font-roboto">5.0 Rating</span>
             </div>
           </div>
 
@@ -204,10 +204,10 @@ const Home = () => {
                       ))}
                     </div>
                   </div>
-                  <p className="text-gray-600 mb-4 italic">"{testimonial.text}"</p>
+                  <p className="text-gray-600 mb-4 italic font-roboto">"{testimonial.text}"</p>
                   <div className="border-t pt-4">
-                    <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                    <p className="text-sm text-gray-500">{testimonial.service}</p>
+                    <p className="font-semibold text-gray-900 font-montserrat">{testimonial.name}</p>
+                    <p className="text-sm text-gray-500 font-roboto">{testimonial.service}</p>
                   </div>
                 </CardContent>
               </Card>
@@ -219,17 +219,17 @@ const Home = () => {
       {/* CTA Strip */}
       <section className="automotive-gradient text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-montserrat">
             Ready for That Showroom Finish?
           </h2>
-          <p className="text-xl mb-8 text-gray-100">
+          <p className="text-xl mb-8 text-gray-100 font-roboto">
             Book your appointment today and experience the difference professional detailing makes
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               asChild 
               size="lg" 
-              className="bg-white text-blue-900 hover:bg-gray-100 text-lg px-8 py-3"
+              className="btn-primary-inverse text-lg px-8 py-3 font-roboto"
             >
               <Link to="/book">Schedule Your Detail Today</Link>
             </Button>
@@ -237,7 +237,7 @@ const Home = () => {
               asChild 
               variant="outline" 
               size="lg" 
-              className="border-white text-white hover:bg-white hover:text-blue-900 text-lg px-8 py-3"
+              className="border-white text-white hover:bg-white hover:text-blue-900 text-lg px-8 py-3 font-roboto"
             >
               <a href="tel:+14072196915">Call (407) 219-6915</a>
             </Button>
