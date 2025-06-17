@@ -310,7 +310,7 @@ const Contact = () => {
               asChild
               variant="outline" 
               size="lg" 
-              className="border-white text-white hover:bg-white hover:text-blue-900 px-8 py-3"
+              className="border-white text-blue-600 hover:bg-white hover:text-blue-900 px-8 py-3"
             >
               <a href="tel:+14072196915">Call (407) 219-6915</a>
             </Button>

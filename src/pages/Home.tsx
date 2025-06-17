@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -237,7 +236,7 @@ const Home = () => {
               asChild 
               variant="outline" 
               size="lg" 
-              className="border-white text-white hover:bg-white hover:text-blue-900 text-lg px-8 py-3 font-roboto"
+              className="border-white text-blue-600 hover:bg-white hover:text-blue-900 text-lg px-8 py-3 font-roboto"
             >
               <a href="tel:+14072196915">Call (407) 219-6915</a>
             </Button>
