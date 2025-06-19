@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -126,8 +125,7 @@ const Services = () => {
                 leather conditioning, and protective treatments.
               </p>
               <Button 
-                variant="outline" 
-                className="border-white text-white hover:bg-white hover:text-blue-900 font-roboto"
+                className="btn-primary-inverse font-roboto"
               >
                 Request Quote
               </Button>
@@ -146,7 +144,7 @@ const Services = () => {
                 Complete exterior restoration including paint decontamination, 
                 polishing, and premium wax protection.
               </p>
-              <Button className="btn-primary font-roboto">
+              <Button className="btn-primary-inverse font-roboto">
                 Request Quote
               </Button>
             </div>
@@ -299,7 +297,7 @@ const Services = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white text-blue-600 hover:bg-white hover:text-blue-900 px-8 py-3 font-roboto"
+              className="border-white text-white hover:bg-white hover:text-blue-900 px-8 py-3 font-roboto"
             >
               <a href="tel:+14072196915">Call (407) 219-6915</a>
             </Button>
