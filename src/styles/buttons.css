@@ -17,7 +17,7 @@
 
 .btn-primary-inverse {
   background: white;
-  color: hsl(var(--automotive-blue)) !important;
+  color: white !important;
   border: 2px solid hsl(var(--automotive-blue));
   border-radius: 0.5rem;
   transition: all 0.3s ease;
