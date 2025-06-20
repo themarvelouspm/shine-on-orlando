@@ -1,24 +1,571 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>shine-on-orlando</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV's Detail & Buff - Orlando's Premier Mobile Auto Detailing</title>
+    <meta name="description" content="Professional mobile auto detailing services in Orlando, FL. Interior, exterior, ceramic coating, and more. 5-star rated service brought to your location.">
+    <meta name="author" content="EV's Detail & Buff">
+    
+    <meta property="og:title" content="EV's Detail & Buff - Orlando's Premier Mobile Auto Detailing">
+    <meta property="og:description" content="Professional mobile auto detailing services in Orlando, FL. Interior, exterior, ceramic coating, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&h=630&fit=crop">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-brand">
+                    <div class="nav-logo">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="nav-text">
+                        <span class="brand-name">EV's Detail & Buff</span>
+                        <p class="brand-tagline">Orlando's Premier Mobile Auto Detailing</p>
+                    </div>
+                </div>
+                
+                <div class="nav-menu" id="navMenu">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#book" class="nav-link nav-cta">Book Now</a>
+                </div>
+                
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <meta property="og:title" content="shine-on-orlando" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Professional Mobile Auto Detailing in Orlando</h1>
+            <p class="hero-subtitle">
+                We bring showroom-quality detailing directly to your location. 
+                Fully mobile with water and power, eco-friendly products, and 5-star rated service.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('book')">Book Now</button>
+                <button class="btn btn-secondary" onclick="callPhone()">
+                    <i class="fas fa-phone"></i>
+                    Call (407) 219-6915
+                </button>
+            </div>
+        </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Auto Detailing Services</h2>
+                <p class="section-subtitle">
+                    From basic washes to complete paint correction, we offer comprehensive 
+                    auto detailing services to keep your vehicle looking its absolute best.
+                </p>
+            </div>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+            <!-- Interior Detailing -->
+            <div class="service-item">
+                <div class="service-content">
+                    <div class="service-info">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-wind"></i>
+                            </div>
+                            <h3 class="service-title">Interior Detailing</h3>
+                        </div>
+                        <p class="service-description">
+                            From vacuuming to odor elimination—we make the inside of your car feel brand new.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i>Complete vacuuming (seats, carpets, crevices)</li>
+                            <li><i class="fas fa-check-circle"></i>Dashboard and console cleaning</li>
+                            <li><i class="fas fa-check-circle"></i>Leather conditioning or fabric protection</li>
+                            <li><i class="fas fa-check-circle"></i>Window cleaning (interior)</li>
+                            <li><i class="fas fa-check-circle"></i>Door jamb cleaning</li>
+                            <li><i class="fas fa-check-circle"></i>Air freshening</li>
+                            <li><i class="fas fa-check-circle"></i>Floor mat cleaning</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price-badge">
+                                <i class="fas fa-dollar-sign"></i>
+                                Starting at $89
+                            </span>
+                            <span class="time-badge">
+                                <i class="fas fa-clock"></i>
+                                1-2 hours
+                            </span>
+                        </div>
+                    </div>
+                    <div class="service-cta">
+                        <h4>Premium Interior Package</h4>
+                        <p>Complete interior transformation including steam cleaning, leather conditioning, and protective treatments.</p>
+                        <button class="btn btn-primary">Request Quote</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exterior Detailing -->
+            <div class="service-item service-reverse">
+                <div class="service-content">
+                    <div class="service-cta bg-white">
+                        <h4>Premium Exterior Package</h4>
+                        <p>Complete exterior restoration including paint decontamination, polishing, and premium wax protection.</p>
+                        <button class="btn btn-primary-inverse">Request Quote</button>
+                    </div>
+                    <div class="service-info">
+                        <div class="service-header">
+                            <div class="service-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <h3 class="service-title">Exterior Detailing</h3>
+                        </div>
+                        <p class="service-description">
+                            Hand wash, tire shine, clay bar, and wax for a spotless exterior.
+                        </p>
+                        <ul class="service-features">
+                            <li><i class="fas fa-check-circle"></i>Hand wash with premium soap</li>
+                            <li><i class="fas fa-check-circle"></i>Clay bar treatment</li>
+                            <li><i class="fas fa-check-circle"></i>Tire cleaning and shine</li>
+                            <li><i class="fas fa-check-circle"></i>Wheel and rim detailing</li>
+                            <li><i class="fas fa-check-circle"></i>Window cleaning (exterior)</li>
+                            <li><i class="fas fa-check-circle"></i>Paint protection wax</li>
+                            <li><i class="fas fa-check-circle"></i>Trim restoration</li>
+                        </ul>
+                        <div class="service-pricing">
+                            <span class="price-badge">
+                                <i class="fas fa-dollar-sign"></i>
+                                Starting at $129
+                            </span>
+                            <span class="time-badge">
+                                <i class="fas fa-clock"></i>
+                                2-3 hours
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ceramic Coating -->
+            <div class="ceramic-section">
+                <div class="section-header">
+                    <div class="service-header">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="service-title">Ceramic Coating Protection</h3>
+                    </div>
+                    <p class="section-subtitle">
+                        Long-lasting protection that keeps your vehicle looking showroom fresh. 
+                        Our ceramic coatings provide unmatched durability and shine.
+                    </p>
+                </div>
+
+                <div class="ceramic-options">
+                    <div class="ceramic-card">
+                        <div class="ceramic-header">
+                            <h4>1-Year Protection</h4>
+                            <p class="ceramic-price">Starting at $299</p>
+                        </div>
+                        <ul class="ceramic-features">
+                            <li><i class="fas fa-check-circle"></i>Basic paint protection</li>
+                            <li><i class="fas fa-check-circle"></i>Enhanced gloss</li>
+                            <li><i class="fas fa-check-circle"></i>Easy maintenance</li>
+                            <li><i class="fas fa-check-circle"></i>UV protection</li>
+                        </ul>
+                        <button class="btn btn-primary">Choose This Option</button>
+                    </div>
+
+                    <div class="ceramic-card ceramic-featured">
+                        <div class="ceramic-header">
+                            <h4>3-Year Protection</h4>
+                            <p class="ceramic-price">Starting at $599</p>
+                        </div>
+                        <ul class="ceramic-features">
+                            <li><i class="fas fa-check-circle"></i>Advanced protection</li>
+                            <li><i class="fas fa-check-circle"></i>Hydrophobic coating</li>
+                            <li><i class="fas fa-check-circle"></i>Scratch resistance</li>
+                            <li><i class="fas fa-check-circle"></i>Professional application</li>
+                        </ul>
+                        <button class="btn btn-primary">Choose This Option</button>
+                    </div>
+
+                    <div class="ceramic-card">
+                        <div class="ceramic-header">
+                            <h4>5-Year Protection</h4>
+                            <p class="ceramic-price">Starting at $999</p>
+                        </div>
+                        <ul class="ceramic-features">
+                            <li><i class="fas fa-check-circle"></i>Maximum protection</li>
+                            <li><i class="fas fa-check-circle"></i>Self-healing properties</li>
+                            <li><i class="fas fa-check-circle"></i>Lifetime support</li>
+                            <li><i class="fas fa-check-circle"></i>Warranty included</li>
+                        </ul>
+                        <button class="btn btn-primary">Choose This Option</button>
+                    </div>
+                </div>
+
+                <div class="ceramic-benefits">
+                    <h4>Benefits of Ceramic Coating:</h4>
+                    <div class="benefits-grid">
+                        <div class="benefit-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Protection from UV rays and oxidation</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-tint"></i>
+                            <span>Hydrophobic properties for easy cleaning</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-star"></i>
+                            <span>Enhanced gloss and depth of color</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Reduced maintenance and washing time</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add-On Services -->
+            <div class="addon-section">
+                <div class="section-header">
+                    <h3 class="section-title">Add-On Services</h3>
+                    <p class="section-subtitle">
+                        Enhance your detailing package with these specialized services
+                    </p>
+                </div>
+
+                <div class="addon-grid">
+                    <div class="addon-card">
+                        <div class="addon-header">
+                            <h4>Headlight Restoration</h4>
+                            <span class="addon-price">$75</span>
+                        </div>
+                        <p>Restore cloudy, yellowed headlights to crystal clear condition</p>
+                        <button class="btn btn-outline">Add to Service</button>
+                    </div>
+
+                    <div class="addon-card">
+                        <div class="addon-header">
+                            <h4>Engine Bay Cleaning</h4>
+                            <span class="addon-price">$50</span>
+                        </div>
+                        <p>Deep clean and dress your engine bay for a showroom look</p>
+                        <button class="btn btn-outline">Add to Service</button>
+                    </div>
+
+                    <div class="addon-card">
+                        <div class="addon-header">
+                            <h4>Ozone Odor Removal</h4>
+                            <span class="addon-price">$100</span>
+                        </div>
+                        <p>Eliminate smoke, pet, and other stubborn odors completely</p>
+                        <button class="btn btn-outline">Add to Service</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services CTA -->
+            <div class="services-cta">
+                <h3>Ready to Transform Your Vehicle?</h3>
+                <p>Contact us today for a personalized quote tailored to your vehicle's needs</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary-inverse">Get Free Quote</button>
+                    <button class="btn btn-outline-white" onclick="callPhone()">
+                        Call (407) 219-6915
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Work Gallery</h2>
+                <p class="section-subtitle">
+                    See the transformation we bring to every vehicle
+                </p>
+            </div>
+            
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About EV's Detail & Buff</h2>
+                    <p class="about-description">
+                        With years of experience in the auto detailing industry, we've built our reputation 
+                        on delivering exceptional results and outstanding customer service. Our fully mobile 
+                        service means we come to you, making professional auto detailing convenient and accessible.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <h4>5-Star Rated</h4>
+                                <p>Consistently excellent reviews from satisfied customers</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h4>Eco-Friendly</h4>
+                                <p>We use biodegradable products that are safe for the environment</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h4>Fully Mobile</h4>
+                                <p>Complete with our own water supply and power equipment</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Insured</h4>
+                                <p>Fully licensed and insured for your peace of mind</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&h=400&fit=crop" alt="Professional auto detailing service" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">
+                    Ready to give your vehicle the care it deserves? Contact us today!
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+14072196915">(407) 219-6915</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:evsdetailservices@gmail.com">evsdetailservices@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Service Area</h4>
+                            <span>Orlando, FL & Surrounding Areas</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="interior">Interior Detailing</option>
+                                <option value="exterior">Exterior Detailing</option>
+                                <option value="full">Full Detail Package</option>
+                                <option value="ceramic">Ceramic Coating</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tell us about your vehicle and needs" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Section -->
+    <section id="book" class="book-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Book Your Service</h2>
+                <p class="section-subtitle">
+                    Schedule your appointment and we'll come to you!
+                </p>
+            </div>
+            
+            <div class="booking-form">
+                <form id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookName">Full Name</label>
+                            <input type="text" id="bookName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookEmail">Email</label>
+                            <input type="email" id="bookEmail" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookPhone">Phone</label>
+                            <input type="tel" id="bookPhone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookDate">Preferred Date</label>
+                            <input type="date" id="bookDate" name="date" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookService">Service Type</label>
+                            <select id="bookService" name="service" required>
+                                <option value="">Select a Service</option>
+                                <option value="interior">Interior Detailing - $89+</option>
+                                <option value="exterior">Exterior Detailing - $129+</option>
+                                <option value="full">Full Detail Package - $199+</option>
+                                <option value="ceramic-1">1-Year Ceramic Coating - $299+</option>
+                                <option value="ceramic-3">3-Year Ceramic Coating - $599+</option>
+                                <option value="ceramic-5">5-Year Ceramic Coating - $999+</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="vehicleType">Vehicle Type</label>
+                            <select id="vehicleType" name="vehicleType" required>
+                                <option value="">Select Vehicle Type</option>
+                                <option value="sedan">Sedan</option>
+                                <option value="suv">SUV</option>
+                                <option value="truck">Truck</option>
+                                <option value="coupe">Coupe</option>
+                                <option value="van">Van</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Service Address</label>
+                        <input type="text" id="address" name="address" placeholder="Where should we come to detail your vehicle?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookNotes">Additional Notes</label>
+                        <textarea id="bookNotes" name="notes" placeholder="Any special requests or details about your vehicle?" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="nav-logo">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div>
+                            <span class="brand-name">EV's Detail & Buff</span>
+                            <p class="brand-tagline">Orlando's Premier Mobile Auto Detailing</p>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        We bring professional auto detailing services directly to you. 
+                        Fully mobile with water and power, eco-friendly products, and 5-star rated service.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#book">Book Now</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <div class="footer-contact-items">
+                        <a href="tel:+14072196915" class="footer-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(407) 219-6915</span>
+                        </a>
+                        <a href="mailto:evsdetailservices@gmail.com" class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>evsdetailservices@gmail.com</span>
+                        </a>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Orlando, FL & Surrounding Areas</span>
+                        </div>
+                    </div>
+
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 EV's Detail & Buff. All rights reserved. Professional & Insured.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
