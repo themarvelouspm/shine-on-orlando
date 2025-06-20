@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Car, Phone, Mail, MapPin, Instagram, Facebook } from 'lucide-react';
 
@@ -67,7 +66,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 EV's Detail & Buff. All rights reserved. Professional & Insured.</p>
+          <p>&copy; 2025 EV's Detail & Buff. All rights reserved. Professional & Insured.</p>
         </div>
       </div>
     </footer>
