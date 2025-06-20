@@ -14,7 +14,7 @@ const ServicesCTA = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
             size="lg" 
-            className="btn-primary-inverse px-8 py-3 font-roboto"
+            className="btn-primary-inverse text-blue-600 px-8 py-3 font-roboto"
           >
             Get Free Quote
           </Button>
